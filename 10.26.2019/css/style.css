@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.slider {
+    position: relative;
+    width: 800px;
+    overflow: hidden;
+
+}
+
+.slider ul {
+    list-style: none;
+    display: flex;
+    position: relative;
+    transition: .3s ease-in;
+    left: 0;
+}
+
+.slider ul li img {
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.slider #next,
+.slider #prew {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.slider #prew {
+    right: 15px;
+}
+
+.slider #next {
+    left: 15px;
+}
+
+/*  overflow: hidden -- qiraqdaki sekilleri gostermir  */
