@@ -49,3 +49,47 @@
 }
 
 /*  overflow: hidden -- qiraqdaki sekilleri gostermir  */
+
+
+.containerbloom {
+    width: 80%;
+    margin: auto;
+}
+
+.sliderbloom {
+    position: relative;
+    width: 800px;
+    /* overflow: hidden; */
+}
+
+.sliderbloom ul {
+    list-style: none;
+    display: flex;
+    position: relative;
+    transition: .3s ease-in;
+    left: 0;
+}
+
+.sliderbloom ul li img {
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.sliderbloom #nextbloom,
+.sliderbloom #prewbloom {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.sliderbloom #prewbloom {
+    right: 15px;
+}
+
+.sliderbloom #nextbloom {
+    left: 15px;
+}
